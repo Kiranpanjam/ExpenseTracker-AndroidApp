@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Annual_status_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FAFBE3"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/Daily_status_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/txt_Annual_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFBB33"
+            android:clickable="false"
+            android:fontFamily="@font/berkshire_swash"
+            android:scaleType="center"
+            android:text="Desired Annual Savings"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            android:textStyle="italic"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutIncome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/ConstraintLayoutSavings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Annual_status"
+            app:layout_constraintVertical_weight="1">
+
+            <TextView
+                android:id="@+id/txt_annual_income_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Annual Income"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_annual_income"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_annual_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:text="10000"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_annual_income_header" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutSavings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/ConstraintLayoutExpense"
+            app:layout_constraintStart_toEndOf="@id/ConstraintLayoutIncome"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Annual_status"
+            app:layout_constraintVertical_weight="1">
+
+            <TextView
+                android:id="@+id/txt_annual_expected_savings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="10"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_annual_expected_savings_header"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_annual_expected_savings_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Desired Annual Savings"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_annual_expected_savings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutExpense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ConstraintLayoutSavings"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Annual_status">
+
+            <TextView
+
+                android:id="@+id/txt_annual_expected_expenditure_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Maximum yearly expense"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_annual_expected_expenditure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_annual_expected_expenditure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="100"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_annual_expected_expenditure_header" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Daily_status_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="#FAFBE3"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Annual_status_layout">
+
+
+        <TextView
+            android:id="@+id/txt_daily_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFBB33"
+            android:clickable="false"
+            android:fontFamily="@font/berkshire_swash"
+            android:scaleType="center"
+            android:text="Daily Status"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutIncomeDaily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/ConstraintLayoutSavingsDaily"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_daily_status"
+            app:layout_constraintVertical_weight="1">
+
+            <TextView
+                android:id="@+id/txt_daily_income_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Daily Income"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_daily_income"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_daily_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="10000"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_daily_income_header" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutSavingsDaily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/ConstraintLayoutExpenseDailyLimit"
+            app:layout_constraintStart_toEndOf="@id/ConstraintLayoutIncomeDaily"
+            app:layout_constraintTop_toBottomOf="@+id/txt_daily_status"
+            app:layout_constraintVertical_weight="1">
+
+            <TextView
+                android:id="@+id/txt_savings_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="10"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_savings_header_daily"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_savings_header_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Today' Savings"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_savings_daily"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutExpenseDailyLimit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ConstraintLayoutSavingsDaily"
+            app:layout_constraintTop_toBottomOf="@id/txt_daily_status">
+
+            <TextView
+
+                android:id="@+id/txt_daily_expenditure_limit_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Daily expense limit"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_expenditure_daily_limit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_expenditure_daily_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="100"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_daily_expenditure_limit_header" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutExpenseToday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ConstraintLayoutSavingsTillDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ConstraintLayoutSavingsDaily">
+
+            <TextView
+
+                android:id="@+id/txt_today_expenditure_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Today's expense"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_today_expenditure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_today_expenditure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="100"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_today_expenditure_header" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayoutSavingsTillDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ConstraintLayoutExpenseToday"
+            app:layout_constraintTop_toBottomOf="@id/ConstraintLayoutSavingsDaily"
+            app:layout_constraintVertical_weight="1">
+
+            <TextView
+                android:id="@+id/txt_savings_tillDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="10"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_savings_header_tillDate"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_savings_header_tillDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Savings So far this year"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_savings_tillDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
