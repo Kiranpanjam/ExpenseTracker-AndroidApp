@@ -6,12 +6,12 @@ Expense Tracker is an application that allows its users to save and track their 
 
 ## Functionalities
   - Splash screen
-	- User registration
-	- Login
-	-	Data entry/removal
-	- Reports
-	- Profile
-	- Logout
+  - User registration
+  - Login
+  - Data entry/removal
+  - Reports
+  - Profile
+  - Logout
 
 
 Licensed under the [MIT LICENSE](License) .
