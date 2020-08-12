@@ -1,7 +1,10 @@
 # ExpenseTracker-AndroidApp
 
-Expense Tracker app helps individuals to track their daily expenses and daily savings. 
-We have provided multiple options to user to view reports of expenses and savings provided with range of dates by user.
-User can customize the list of categories provided by default, they can add or remove the categories.
+##Project Name: 
+Expense Tracker
+##Project Description: 
+Expense Tracker is an application that allows its users to save and track their daily expenses. It takes inputs from user such as annual income, desired savings and maximum daily expense and notifies user if by changing the respective items on the home screen. It also allows user to add their own categories to add expenses and delete if not needed by providing more flexibility to user. User can also track the expenses or savings by viewing reports generated according to the range of dates provided. There are also few functionalities to change password, to remember user login state by eliminating the need of logging in every time.
+
+
 
 Licensed under the [MIT LICENSE](License) .
