@@ -22,16 +22,20 @@ Expense Tracker is an application that allows its users to save and track their 
 ## Snapshots from the app
   - Splash Screen<br />
 ![image](https://user-images.githubusercontent.com/47277040/90354779-1f1efb00-dfff-11ea-81bd-2cf62c95d715.png) <br />
+<br />
   - Login and Registration<br />
 ![image](https://user-images.githubusercontent.com/47277040/90354782-2219eb80-dfff-11ea-90e4-a4ceff6e3ae8.png)
 ![image](https://user-images.githubusercontent.com/47277040/90354784-23e3af00-dfff-11ea-8e12-5a645d6a3074.png)
 ![image](https://user-images.githubusercontent.com/47277040/90354788-26de9f80-dfff-11ea-82ff-cb83c1f87ede.png) <br />
+<br />
   - Navigation drawer and Homescreen<br />
 ![image](https://user-images.githubusercontent.com/47277040/90354795-2c3bea00-dfff-11ea-9d3d-7aeb3a1d6a8a.png)
 ![image](https://user-images.githubusercontent.com/47277040/90354798-2e9e4400-dfff-11ea-9160-4ccb1773c822.png) <br />
+<br />
   - Reports<br />
 ![image](https://user-images.githubusercontent.com/47277040/90354809-3827ac00-dfff-11ea-8914-4fa43799a2c2.png)
 ![image](https://user-images.githubusercontent.com/47277040/90354812-3a8a0600-dfff-11ea-9017-d72cb1fb81aa.png) <br />
+<br />
   - Categories, Add and Remove<br />
 ![image](https://user-images.githubusercontent.com/47277040/90354819-3e1d8d00-dfff-11ea-8ecc-9d3338bdc399.png)
 ![image](https://user-images.githubusercontent.com/47277040/90354822-407fe700-dfff-11ea-8ad5-0071feafaecd.png)
