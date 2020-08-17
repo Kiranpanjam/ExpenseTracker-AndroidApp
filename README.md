@@ -18,5 +18,8 @@ Expense Tracker is an application that allows its users to save and track their 
   - Java
   - SQLite
   - AnyChart (Library)
+  
+## Snapshots from the app
+
 
 Licensed under the [MIT LICENSE](License) .
